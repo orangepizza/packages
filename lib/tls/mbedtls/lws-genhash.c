@@ -25,7 +25,6 @@
  *  same whether you are using openssl or mbedtls hash functions underneath.
  */
 #include "libwebsockets.h"
-#include <mbedtls/version.h>
 
 #if defined(MBEDTLS_VERSION_NUMBER) && (MBEDTLS_VERSION_NUMBER >= 0x03000000)
 #define mbedtls_md5_starts_ret mbedtls_md5_starts
